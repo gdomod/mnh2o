@@ -22,5 +22,5 @@ RUN cd h2o && chmod -R 777 * && ./autogen.sh && ./configure --disable-tests --di
 ADD run.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/run.sh
 
-#ENTRYPOINT ["/usr/local/bin/run.sh"]
+ENTRYPOINT ["/usr/local/bin/run.sh"]
 CMD []
